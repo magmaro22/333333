@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건설공종별 재해 사례 조사 통합 인덱스</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Pretendard -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <style>
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        }
+        .backdrop-blur-md {
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Header Section -->
+    <header class="sticky top-0 z-40 bg-slate-900 text-white shadow-md border-b border-slate-800 backdrop-blur-md bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-amber-500 text-slate-900 p-2 rounded-lg font-bold flex items-center justify-center">
+                        <!-- Helmet SVG Icon -->
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="text-xs text-amber-400 font-bold tracking-wider block">CONSTRUCTION SAFETY INDEX</span>
+                        <h1 class="text-lg sm:text-xl font-black leading-tight">건설공종별 재해 사례 조사</h1>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-4">
+                    <button onclick="scrollToSection('main-index')" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">공종별 인덱스</button>
+                    <button onclick="scrollToSection('safety-statistics')" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">위험 통계</button>
+                    <button onclick="scrollToSection('safety-quiz')" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">자가 안전 진단</button>
+                    <button onclick="scrollToSection('feedback-board')" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">피드백 게시판</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Banner -->
+    <section class="relative bg-slate-900 text-white overflow-hidden">
+        <!-- Visual background patterns -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
